@@ -1,188 +1,249 @@
-# 🚀 React + Vite
+# 🚀 React + JavaScript + Vite
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![React](https://img.shields.io/badge/React-18.x-61DAFB.svg?logo=react)
-![Vite](https://img.shields.io/badge/vite-4.x-646CFF.svg?logo=vite)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E.svg?logo=javascript)
+![Vite](https://img.shields.io/badge/vite-4.x-646CFF.svg?logo=vite)
 ![ESLint](https://img.shields.io/badge/ESLint-8.x-4B32C3.svg?logo=eslint)
 
-Un moderno boilerplate per applicazioni web React con bundler Vite. Progettato per offrire un'esperienza di sviluppo veloce e ottimizzata con supporto completo per funzionalità offline e salvatagio dati in localStorage.
+A modern web application built with React, JavaScript, and Vite. Perfect for creating responsive, interactive, and high-performance web applications with a component-based architecture.
+
+**Topics:** `react` `javascript` `vite` `web-app` `spa` `offline-first` `local-storage` `component-based` `responsive`
 
 ## 📋 Table of Contents
 - [Features](#-features)
 - [Project Structure](#-project-structure)
-- [Setup & Development](#-setup--development)
+- [Recommended IDE Setup](#-recommended-ide-setup)
+- [Project Setup](#-project-setup)
 - [Package Managers](#-package-managers)
-- [Expanding ESLint](#-expanding-eslint-configuration)
+- [ESLint Configuration](#-eslint-configuration)
 - [Resources](#-resources)
 
 ## ✨ Features
 
-- ⚛️ React per lo sviluppo di interfacce utente moderne
-- 🔄 Hot Module Replacement (HMR) per sviluppo rapido
-- ⚡ Vite per un bundling ultra-veloce
-- 💾 Supporto completo per funzionalità offline (localStorage)
-- 📤 Possibilità di implementare export/backup dei dati
-- 📊 Struttura per implementare dashboard e statistiche
-- 🗓️ Supporto per timeline e viste calendario
-- 🔍 Configurazione ESLint integrata
-- 🎨 Setup per transient props pattern in componenti styled
-- 🌐 Web application ottimizzata per la distribuzione
+- ⚛️ React framework for UI components
+- 📊 Support for dashboard and statistical visualizations
+- 🗓️ Ability to implement timeline and calendar views
+- 💾 Data storage in localStorage (100% offline)
+- 📤 Import/export and backup functionality
+- 🔄 Hot Module Replacement (HMR) during development
+- ⚡ Ultra-fast build with Vite bundler
+- 🎨 Component-based architecture
+- 📱 Responsive design for all devices
+- 🧩 Modular code structure
+- 🔍 JavaScript linting with ESLint
+- 🎨 Code formatting with Prettier
+- 🧪 Testing with Vitest and React Testing Library
 
 ## 🗂️ Project Structure
 
 ```
 bl-vitejs-javascript-react/
-├── public/             # Risorse statiche
+├── public/             # Static assets
+├── dist/               # Build output directory
 ├── src/
-│   ├── assets/         # Immagini, font e risorse varie
-│   ├── components/     # Componenti React riutilizzabili
-│   │   ├── ui/         # Componenti UI di base
-│   │   └── layout/     # Componenti di layout
+│   ├── assets/         # Project assets (images, fonts, etc.)
+│   ├── components/     # React components
+│   │   ├── ui/         # UI components
+│   │   └── layout/     # Layout components
 │   ├── hooks/          # Custom React hooks
-│   ├── pages/          # Componenti pagina
-│   ├── utils/          # Funzioni di utilità
-│   ├── App.jsx         # Componente principale dell'app
-│   ├── index.css       # Stili globali
-│   └── main.jsx        # Entry point dell'applicazione
-├── .eslintrc.cjs       # Configurazione ESLint
-├── index.html          # Template HTML
-├── package.json        # Dipendenze e script
-└── vite.config.js      # Configurazione Vite
+│   ├── utils/          # Utility functions
+│   ├── context/        # React context providers
+│   ├── App.jsx         # Root React component
+│   ├── main.jsx        # Application entry point
+│   └── index.css       # Global styles
+├── .eslintrc.cjs       # ESLint configuration
+├── vite.config.js      # Vite configuration
+├── package.json        # Project dependencies and scripts
+└── index.html          # HTML template
 ```
 
-## 🚀 Setup & Development
+## 🛠️ Recommended IDE Setup
 
-### 📥 Installazione
+- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+## 🚀 Project Setup
+
+### 📥 Install
 
 ```bash
-# Utilizzando NPM
-$ npm install
-
-# Utilizzando Yarn
-$ yarn
-
-# Utilizzando PNPM
 $ pnpm install
 ```
 
-### 🔧 Sviluppo
+### 🔧 Development
 
 ```bash
-# Utilizzando NPM
-$ npm run dev
-
-# Utilizzando Yarn
-$ yarn dev
-
-# Utilizzando PNPM
 $ pnpm dev
 ```
 
 ### 📦 Build
 
 ```bash
-# Utilizzando NPM
-$ npm run build
-
-# Utilizzando Yarn
-$ yarn build
-
-# Utilizzando PNPM
 $ pnpm build
 ```
 
-### 🔍 Preview
+### 🧪 Test
 
 ```bash
-# Utilizzando NPM
-$ npm run preview
-
-# Utilizzando Yarn
-$ yarn preview
-
-# Utilizzando PNPM
-$ pnpm preview
+$ pnpm test
 ```
 
 ## 📦 Package Managers
 
-Questo progetto supporta diversi package manager. Ecco le caratteristiche di ciascuno:
+This project supports multiple package managers. Here's how to use each one:
 
 ### NPM
 
-NPM è il package manager predefinito per Node.js.
+NPM is the default package manager for Node.js.
 
-**Installazione NPM:**
+**Install NPM:**
 ```bash
-# Incluso con l'installazione di Node.js
+# Included with Node.js installation
 ```
 
-**Caratteristiche principali:**
-- 📚 Vasto ecosistema di pacchetti
-- 🔒 Struttura gerarchica di node_modules
-- 📋 Package.json per la gestione delle dipendenze
+**Setup project with NPM:**
+```bash
+# Install dependencies
+$ npm install
+
+# Run development server
+$ npm run dev
+
+# Build application
+$ npm run build
+
+# Run tests
+$ npm run test
+```
+
+**Key features:**
+- 📚 Vast package ecosystem
+- 🔒 Hierarchical node_modules structure
+- 📋 Package.json for dependency management
 
 ### Yarn
 
-Yarn è un'alternativa rapida, affidabile e sicura a NPM.
+Yarn is a fast, reliable, and secure alternative to NPM.
 
-**Installazione Yarn:**
+**Install Yarn:**
 ```bash
-# Installazione tramite NPM
+# Install using NPM
 $ npm install -g yarn
 ```
 
-**Caratteristiche principali:**
-- ⚡ Velocità di installazione superiore
-- 📦 Caching offline
-- 🔒 Maggiore sicurezza con checksum
-- 📋 yarn.lock per installazioni deterministiche
+**Setup project with Yarn:**
+```bash
+# Install dependencies
+$ yarn
+
+# Run development server
+$ yarn dev
+
+# Build application
+$ yarn build
+
+# Run tests
+$ yarn test
+```
+
+**Key features:**
+- ⚡ Faster installation speeds
+- 📦 Offline caching
+- 🔒 Better security with checksums
+- 📋 yarn.lock for deterministic installations
 
 ### PNPM
 
-PNPM è un package manager efficiente in termini di spazio su disco.
+PNPM is a disk-space efficient package manager.
 
-**Installazione PNPM:**
+**Install PNPM:**
 ```bash
-# Installazione tramite NPM
+# Install using NPM
 $ npm install -g pnpm
 ```
 
-**Caratteristiche principali:**
-- 💾 Risparmio di spazio su disco tramite symlink
-- 🚀 Velocità di installazione elevata
-- 🔄 Storage con indirizzamento basato sul contenuto
-- 📋 pnpm-lock.yaml per blocco delle dipendenze
+**Setup project with PNPM:**
+```bash
+# Install dependencies
+$ pnpm install
 
-### Confronto
+# Run development server
+$ pnpm dev
 
-| Funzionalità          | NPM     | Yarn    | PNPM    |
+# Build application
+$ pnpm build
+
+# Run tests
+$ pnpm test
+```
+
+**Key features:**
+- 💾 Disk space savings through symlinks
+- 🚀 Fast installation speeds
+- 🔄 Content-addressable storage
+- 📋 pnpm-lock.yaml for dependency lock
+
+### Comparison
+
+| Feature               | NPM     | Yarn    | PNPM    |
 |-----------------------|---------|---------|---------|
-| Utilizzo disco        | Alto    | Alto    | Basso   |
-| Velocità installazione| Lenta   | Veloce  | Velocissima |
-| Installazioni parallele| Limitato| Sì      | Sì      |
-| Supporto workspaces   | Limitato| Buono   | Ottimo  |
-| Modalità offline      | Limitato| Buono   | Buono   |
-| Sicurezza             | Buona   | Migliore| Migliore|
+| Disk usage            | High    | High    | Low     |
+| Installation speed    | Slow    | Fast    | Fastest |
+| Parallel installations| Limited | Yes     | Yes     |
+| Workspace support     | Limited | Good    | Best    |
+| Offline mode          | Limited | Good    | Good    |
+| Security              | Good    | Better  | Better  |
 
-## 🔧 Expanding ESLint Configuration
+## 🛡️ ESLint Configuration
 
-Se stai sviluppando un'applicazione per la produzione, ti consigliamo di utilizzare TypeScript e abilitare le regole di lint consapevoli del tipo. Consulta il [template TS](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) per integrare TypeScript e [`typescript-eslint`](https://typescript-eslint.io) nel tuo progetto.
+This project uses ESLint to ensure code quality. The configuration is located in `.eslintrc.cjs`.
+
+### Basic Configuration
+
+```js
+// .eslintrc.cjs
+module.exports = {
+  root: true,
+  env: { browser: true, es2020: true },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
+    'plugin:react-hooks/recommended',
+  ],
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+  settings: { react: { version: '18.2' } },
+  plugins: ['react-refresh'],
+  rules: {
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+    ],
+  },
+}
+```
+
+### For Production Applications
+
+For production applications, you may want to add additional rules:
+
+```js
+// Additional rules for production
+rules: {
+  'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
+  'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
+  'react/prop-types': 'error',
+  'react-hooks/rules-of-hooks': 'error',
+  'react-hooks/exhaustive-deps': 'warn',
+}
+```
 
 ## 📚 Resources
 
 - [React Documentation](https://reactjs.org/docs/getting-started.html)
 - [Vite Documentation](https://vitejs.dev/guide/)
-- [JavaScript MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [ESLint Documentation](https://eslint.org/docs/user-guide/)
+- [ESLint Documentation](https://eslint.org/docs/user-guide/getting-started)
 - [NPM Documentation](https://docs.npmjs.com/)
 - [Yarn Documentation](https://yarnpkg.com/getting-started)
 - [PNPM Documentation](https://pnpm.io/motivation)
-
-## 🔌 Plugin ufficiali Vite
-
-Attualmente, sono disponibili due plugin ufficiali:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) utilizza [Babel](https://babeljs.io/) per Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) utilizza [SWC](https://swc.rs/) per Fast Refresh
